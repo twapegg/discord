@@ -1,0 +1,258 @@
+/* imports Bebas Neue Font Family to the Webpage */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+* { /* styles for the entir document*/
+    border: 0;
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Bebas Neue', cursive;
+}
+body{
+  background-color: #5b63fd;
+}
+.hero { /* styles for entire section */
+  width: 100%; /* Set the width to 100% of the parent container */
+  display: flex; /* Enable flexbox for the hero section */
+  align-items: left; /* Vertically center the content inside the hero section */
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  position: relative;
+  z-index: 9999;
+}
+
+.hero img {  /* background image styles*/
+    position:absolute;
+    width: 100%;
+    height: 110vh;
+    object-fit: cover;
+}
+
+#fg { /* styles for foreground image*/
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+  width: 30vw; /* Set a fixed width for the image */
+  height: 40vh; /* Set a fixed height for the image */
+  z-index: 100; /* Make sure the image appears on top of the other image */
+}
+
+#e { /* styles for espinach avatar*/
+  position: absolute;
+  bottom: 8.6%;
+  right: 35.4%;
+  width: 12.5vw; /* Set a fixed width for the image */
+  height: 27.9vh; /* Set a fixed height for the image */
+  transform: scale(0.73);
+  z-index: 100;
+  cursor:pointer;
+}
+#f { /* styles for pata avatar*/
+  position: absolute;
+  bottom: 17.8%;
+  right: 29.5%;
+  width: 15vw; /* Set a fixed width for the image */
+  height: 40vh; /* Set a fixed height for the image */
+  transform: scale(0.5);
+  z-index: 100;
+  cursor:pointer;
+}
+
+#a { /* styles for altonags avatar*/
+  position: absolute;
+  bottom: 17.6%;
+  right: 22%;
+  width: 12.5vw; /* Set a fixed width for the image */
+  height: 30vh; /* Set a fixed height for the image */
+  transform: scale(0.72);
+  z-index: 100;
+  cursor:pointer;
+}
+#arrowA { /* styles for altonags arrow*/
+  position: absolute;
+  bottom: 19.6%;
+  right: 19%;
+  width: 4vw; /* Set a fixed width for the image */
+  height: 6vh; /* Set a fixed height for the image */
+  
+  transform: rotate(-630deg);
+
+  z-index: 100;
+ 
+}
+#arrowP{ /* styles for pata arrow */
+  position: absolute;
+  bottom: 17.6%;
+  right: 46%;
+  width: 4vw; /* Set a fixed width for the image */
+  height: 6vh; /* Set a fixed height for the image */
+  
+  transform: rotate(230deg);
+
+  z-index: 100;
+
+}
+#arrowE{ /* styles for espinach arrow */
+  position: absolute;
+  bottom: 35.6%;
+  right: 42%;
+  width: 4vw; /* Set a fixed width for the image */
+  height: 6vh; /* Set a fixed height for the image */
+  
+  transform: rotate(230deg);
+
+  z-index: 100;
+  
+}
+.hero h1 { /* styles for the title text */
+  font-size: 120px; /* Set the font size to 48px */
+  font-weight: 400;
+  color: #fff;
+  z-index: 1;
+  margin-bottom: -10px;
+}
+.hero p { /* styles for the content under th  e title tag */
+  font-size: 14px; /* Set the font size to 24px */
+  color: #fff; /* Set the text color to white */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 300px;
+}
+
+.text { /* styles for the entire text section */
+    z-index: 1;
+    display: block;
+    width: 830px;
+    margin: auto;
+}
+.preview-link{ /* styles for the labels of th developers */  
+  color: white;
+  position: absolute;
+  text-decoration: none;
+  top: 82%;
+  left: 79%;
+  transform: translate(-50%,50%);
+  font-size: 20px;
+  width: 4vw; 
+  height: 6vh;
+  z-index: 100;
+}
+.preview-link1{ /* styles for the labels of the developers */
+  color: white;
+  position: absolute;
+  text-decoration: none;
+  top: 52%;
+  left: 54%;
+  transform: translate(-50%,50%);
+  font-size: 20px;
+  z-index: 100;
+}
+.preview-link2{ /* styles for the labels of the developers*/
+  color: white;
+  position: absolute;
+  text-decoration: none;
+  top: 72%;
+  left: 49%;
+  transform: translate(-50%,50%);
+ font-size: 20px;
+ z-index: 100;
+}
+.profile {
+  display: block;
+  width: 830px;
+  margin: auto;
+  padding: 90px;
+}
+.profile p {
+  font-family:'Montserrat', sans-serif;
+  line-height: 27px;
+}
+.altonags {
+  float: left;
+  width: 380px;
+  height: 380px;
+  margin-bottom: 100px;
+  border: 3px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.altonags-text {
+  float: right;
+  width: 50%;
+  text-align: justify;
+  margin-bottom: 70px;
+  color: #fff;
+  
+}
+.altonags-text h1 {
+  font-size: 50px;
+  color: #fff;
+}
+.espinach {
+  float: right;
+  width: 45%;
+  object-fit: contain;
+  margin-bottom: 150px;
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 380px;
+  height: 380px;
+ 
+}
+.espinach-text {
+  float: left;
+  width: 50%;
+  text-align: justify;
+  margin-bottom: 25px;
+  margin-bottom: 70px;
+  color: #fff;
+}
+.espinach-text h1 {
+  font-size: 50px;
+}
+
+.pata { /* pata styles */
+  float: left;
+  width: 45%;
+  object-fit: contain;
+  margin-bottom: 100px;
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 380px;
+  height: 380px;
+}
+.pata-text {
+  float: right;
+  width: 50%;
+  text-align: justify;
+  color: #fff;
+}
+.pata-text h1 {
+  font-size: 50px;
+}
+.altonags-text h4{
+  letter-spacing: 0.1em;
+}
+.espinach-text h4{
+  letter-spacing: 0.1em;
+}
+.pata-text h4{
+  letter-spacing: 0.1em;
+}
+.cloud img{
+  position: absolute;
+  bottom: -80%;
+  right: 80%;
+  width:  20vw; /* Set a fixed width for the image */
+  height: 30vh; /* Set a fixed height for the image */
+  z-index: 100;
+}
+.cloud #clou2{
+  position: absolute;
+  bottom: -130%;
+  right: 2%;
+  width:  20vw; /* Set a fixed width for the image */
+  height: 30vh; /* Set a fixed height for the image */
+  z-index: 100;
+}

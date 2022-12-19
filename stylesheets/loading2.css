@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans&family=Open+Sans:wght@300&display=swap');
+body{
+    background-color: #212228;
+}
+.rotate-image img {
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 130px;
+  height: 200px;
+  top: 400px;
+  position: relative;
+}
+.did{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+  left: 52%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+  top: 300px;
+  position: relative;
+  
+}
+.sentence{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: none;
+  font-size: 15px;
+  left: 54%;
+  transform: translate(-50%,-50%);
+  width: 450px;
+  top: 340px;
+  position: relative;
+}
+
+
+  

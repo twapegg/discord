@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <!-- the following meta tags tell the browser the following:
+        - to use UTF-8 in interpreting to machine code
+        - to allow suport for older versions of IE
+        - sets the width of the page to follow the device's screen -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/login.css" />
+    <script src="scripts/login.js"></script>
+    <title>Discord - Log In</title>
+  </head>
+  <body>
+    <section>
+    <!-- displays the background image -->
+      <img src="images/bg-login.png" alt="" />
+    <!-- start of the container-->
+      <div class="form">
+        <!-- displays heading -->
+        <span class="header">Welcome Back!</span>
+        <span class="subheader">We're so excited to see you again!</span>
+        <div class="inputfield">
+          <!-- asks input for username -->
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="username"
+            name="name"
+            placeholder="Enter username"
+          />
+        </div>
+        <div class="inputfield">
+          <!-- asks input for password -->
+          <label for="password">Password:</label>
+          <input
+            type="text"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+          />
+          <!-- validates the responses given -->
+            <button type="submit" name="submit" onclick="validate()">Log in</button>
+        </div>
+        <a href="">Forgot your Password?</a>
+        <!-- links to the signup page if user has no account yet -->
+        <a href="sign-up.html">Register an Account</a>
+      </div>
+      <!-- end of container -->
+
+      <!-- POPUP FOR SUCCESSUL -->
+      <!--<div id="popup" class="popup">
+        <div class="up">
+          <i class="bi bi-check-circle"></i>
+         <h2>Success</h2>
+        </div>
+        <div class="text">Congratulations, you have successfully logged in your account.</div>
+        <div class="con"><a href="welcome.html">Continue</a></div>
+        <button id="close-popup">
+          <i class="bi bi-x-circle-fill"></i>
+        </button>
+      </div>-->
+       <!-- POPUP FOR FAILED -->
+       <div id="popup1" class="popup1">
+        <div class="up1">
+          <i class="bi bi-check-circle"></i>
+         <h2>Success</h2>
+        </div>
+        <div class="text1">Log in failed</div>
+        <div class="con1"><a href="welcome.html">Continue</a></div>
+        <button id="close-popup1">
+          <i class="bi bi-x-circle-fill"></i>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
