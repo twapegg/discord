@@ -1,0 +1,99 @@
+<!--Default USERNAME: Silliman
+    Default PASSWORD: IluvU$1r-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- the following meta tags tell the browser the following:
+        - to use UTF-8 in interpreting to machine code
+        - to allow suport for older versions of IE
+        - sets the width of the page to follow the device's screen -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/login.css" />
+    <script src="scripts/login.js"></script>
+    <link rel="icon" href="../images/icon (1).png" type="image/x-icon" />
+    <title>Discord - Log In</title>
+  </head>
+  <body>
+    <section>
+      <!-- displays the background image -->
+      <img src="images/bg-login.png" alt="" />
+      <!-- start of the container-->
+      <div class="form" id="form">
+        <!-- displays heading -->
+        <span class="header">Welcome Back!</span>
+        <span class="subheader">We're so excited to see you again!</span>
+        <div class="inputfield">
+          <!-- asks input for username -->
+          <label for="name">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter username"
+            required
+          />
+        </div>
+        <div class="inputfield">
+          <!-- asks input for password -->
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+            required
+          />
+          <i class="bi bi-eye" onclick="viewPassword()"></i>
+        </div>
+        <!-- validates the responses given -->
+        <button type="submit" name="submit" onclick="validate()">Log in</button>
+        <a id="forgot" onclick="view()">Forgot your Password?</a>
+        <!-- links to the signup page if user has no account yet -->
+        <a href="loading4.html">Register an Account</a>
+      </div>
+      <!-- end of container -->
+
+      <!-- POPUP FOR SUCCESSUL -->
+      <div id="popup" class="popup">
+        <div class="up">
+          <i class="bi bi-check-circle"></i>
+          <h2>Success</h2>
+        </div>
+        <p>Congratulations, you have successfully logged in your account.</p>
+
+        <div class="con"><a href="welcome.html">Continue</a></div>
+        <button id="close-popup">
+          <i class="bi bi-x-circle-fill"></i>
+        </button>
+      </div>
+      <!-- POPUP FOR FAILED -->
+      <div id="popup1" class="popup1">
+        <div class="up1">
+          <i class="bi bi-x-circle"></i>
+          <h2>Fail</h2>
+        </div>
+        <p class="text1">Log in failed</p>
+        <p class="text1">Attempts: <span id="counter">3</span></p>
+        <div class="con1" id="try">Try Again</div>
+        <button id="close-popup1">
+          <i class="bi bi-x-circle-fill"></i>
+        </button>
+      </div>
+
+      <!-- POPUP FOR FORGOT PASSWORD -->
+      <div id="popup2" class="popup2">
+        <div class="up2" onclick="exit()">
+          <i class="bi bi-lock"></i>
+          <h2>Default Password</h2>
+        </div>
+        <p class="text1">Username: Silliman <br />Password: IluvU$1r</p>
+        <div class="con2" id="try" onclick="exit()">Continue</div>
+        <button id="close-popup2" onclick="exit()">
+          <i class="bi bi-x-circle-fill"></i>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- the following meta tags tell the browser the following:
+        - to use UTF-8 in interpreting to machine code
+        - to allow suport for older versions of IE
+        - sets the width of the page to follow the device's screen -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/sign-up_styles.css" />
+    <link rel="icon" href="../images/icon (1).png" type="image/x-icon" />
+    <title>Discord | Sign Up</title>
+  </head>
+
+  <body>
+    <section>
+      <!--displays the background image-->
+      <img src="images/bg-signup.png" />
+      <!--start of the container-->
+      <form action="verify.php" method="post" id="form" class="container">
+        <!-- start of the input section-->
+        <span class="header">Create an Account</span>
+        <!-- starts the columned inputs -->
+        <div class="column1">
+          <label class="label">FIRST NAME</label>
+          <input
+            type="text"
+            class="input"
+            name="firstname"
+            id="firstname"
+            placeholder="Enter first name"
+            required
+          />
+          <label class="label">USERNAME</label>
+          <input
+            type="text"
+            class="input"
+            name="username"
+            id="username"
+            placeholder="Enter username"
+            required
+          />
+          <label class="label">MOBILE NUMBER</label>
+          <input
+            type="text"
+            class="input"
+            name="mobileno"
+            id="mobileno"
+            placeholder="+63 000 000 0000"
+            required
+          />
+        </div>
+        <!-- asks for input -->
+        <div class="column2">
+          <label class="label">LAST NAME</label>
+          <input
+            type="text"
+            class="input"
+            name="lastname"
+            id="lastname"
+            placeholder="Enter last name"
+            required
+          />
+          <label class="label">PASSWORD</label>
+          <input
+            type="text"
+            class="input"
+            name="password"
+            id="password"
+            placeholder="Enter password"
+            required
+          />
+          <!-- asks the user their gender identification from
+                            a series of choicees -->
+          <label class="label">GENDER</label>
+          <br />
+          <!-- the choicees -->
+          <select class="input" name="gender" id="gender" required>
+            <option>--Gender--</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Non-Binary</option>
+            <option>Other</option>
+            <option>Rather Not Say</option>
+          </select>
+        </div>
+        <!-- end of the columned inputs -->
+        <div class="sec-box">
+          <div class="email">
+            <!-- email input -->
+            <label class="label">EMAIL</label>
+            <input
+              type="text"
+              class="input"
+              id="email"
+              name="email"
+              placeholder="kimfaburada@domain.com"
+            />
+          </div>
+          <div class="birthday">
+            <!-- start of the birthdate inputs -->
+            <label class="label">DATE OF BIRTH</label>
+            <br />
+            <!-- selection of birthmonths -->
+            <select
+              id="month"
+              class="birthdate"
+              name="birthmonth"
+              id="birthmonth"
+            >
+              <option>--Birth Month--</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+            <!-- selection of the choices are looped using JavaScript-->
+            <select id="day" class="birthdate" name="birthday" id="birthday">
+              <option value="">--Birth Date--</option>
+            </select>
+            <!-- selection of birthyears the choices are looped using JavaScript -->
+            <select id="year" class="birthdate" name="birthyear" id="birthyear">
+              <option value="">--Birth Year--</option>
+            </select>
+          </div>
+          <!-- end of the input section -->
+          <div class="lower">
+            <!-- button for submission of form -->
+            <button type="submit" name="submit" value="Submit" class="continue">
+              Continue
+            </button>
+            <br />
+            <span>
+              <!-- redirects to a page if user has no account yet -->
+              <a href="loading3.html">Already have an account? </a>
+            </span>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <script src="scripts/sign-up_script.js"></script>
+  </body>
+</html>

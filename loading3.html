@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/loading.css" />
+    <link rel="icon" href="../images/icon (1).png" type="image/x-icon" />
+  </head>
+  <body onload="redirect()">
+    <!--Calls the redirect() function-->
+    <div class="container">
+      <div class="rotate-image">
+        <img src="images/gif.gif" />
+      </div>
+      <!-- fun fact :D -->
+      <h2>DID YOU KNOW</h2>
+      <p>Stanley has a foot fetish</p>
+    </div>
+
+    <script>
+      // declares a function that sets a delay before executing a function which is myURL
+      function redirect() {
+        var interval = setInterval(myURL, 4200);
+      }
+      // declares a function called myURL to specify a reference point to redirect to
+      function myURL() {
+        // assigns the reference point into "login.html"
+        document.location.href = "login.html";
+        // removes the delay
+        clearInterval(interval);
+      }
+    </script>
+  </body>
+</html>
