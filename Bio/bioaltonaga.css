@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap"); /*URL for our desired font*/
+
+body { /*sets the style for the body*/
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #323338;
+  color: #ffffff;
+  padding: 2% 20%;
+  height: 100vh;
+}
+
+.personal { /* start of styles for the upper part */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.upper-container { 
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+.stanley { /* styles for the image of dev*/
+  float: right;
+}
+
+.header-text { /* styles for the developer */
+  flex: 1;
+  text-align: left;
+  width: 50%;
+}
+
+.header-img { /* position of image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 0px 10px;
+}
+
+.header-img img { 
+  width: 100%;
+}
+
+.personal h1 { /* Styles for the Name */
+  text-align: left;
+  font-family: Bebas Neue, cursive;
+  font-size: 90px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.personal h2 { /* Styles for all the Subheadings*/
+  font-family: Bebas Neue, cursive;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#office { /* styles for the course name*/
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.personal p,
+li { /* styles for the content */
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  opacity: 0.8;
+}
+.personal .column { /* position of the content */
+  width: 50%;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.personal .column2 {
+  margin-top: 5.4rem;
+  width: 50%;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.text { /* position of the entire text */
+  margin-bottom: 35vh;
+}
+.progress img { /* position of the  skills */
+  position: relative;
+  left: -50px;
+}
+
+strong { /* styles for the details */
+  font-weight: 600;
+  opacity: 1;
+  color: #ffffff;
+}
+
+li { /* listed items */
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
