@@ -21,5 +21,5 @@ To get started with the website, simply visit the <a href="https://twapegg.githu
 ### Credits
 - The design and layout of the website were inspired by <a href="https://discord.com/">Discord</a>.
 - Icons used in the website were sourced from <a href="https://icons.getbootstrap.com/">Bootstrap</a>.
-- Fonts used in this website were source from <a href="https://fonts.google.com/">Google Fonts</a>
+- Fonts used in this website were sourced from <a href="https://fonts.google.com/">Google Fonts</a>
 - Some images used on the website were sourced from Google and are credited to their respective creators/sources.
