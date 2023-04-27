@@ -10,7 +10,7 @@ Finished December 20, 2022
 - Jozua Patalan
 
 ### Getting Started
-To get started with the website, simply visit the <a href="https://twapegg.github.io/earlylearningacademy/">link</a> hosted by Github Pages.
+To get started with the website, simply visit the <a href="https://twapegg.github.io/discord//">link</a> hosted by Github Pages.
 
 Or clone the repository and open index.html in your web browser.
 
